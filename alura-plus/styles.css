@@ -1,16 +1,26 @@
 @import url("styles/header.css");
+@import url("styles/banner.css");
 
 :root {
         --cor-de-fundo: #EBECEE;
         --branco: #FFFFFF;
+        --laranja: #eb9b00;
+        --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+        --fonte-principal: "Poppins";
     }
     .cabeçalho {
         background-color: var(--branco);
-    }
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
-body {
+
+body{
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 h1 {
@@ -24,3 +34,35 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
+.container {
+    display: flex;
+    align-items: center;
+}
+.container__imagem {
+    padding: 1em;
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+  } 
+  .container__botao {
+    display: none;
+
+  .lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+
+.lista-menu__item{
+  padding: 1em;
+  background-color: var(--branco);
+}
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+  }
+  
