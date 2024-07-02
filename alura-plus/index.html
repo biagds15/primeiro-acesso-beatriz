@@ -49,15 +49,101 @@
             </header>
             <section class="banner">
             </section><section class="carrossel"></section>
+            <section class="tópicos"></section>
+            <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="tópicos__lista"></ul>
+                <li class="tópicos__item"></li><a href="#" class="tópicos__link">Android</a></li>
+                <li class="tópicos__item"></li>
+                <a href="#" class="tópicos__link">Marketing Digital</a>
+            </li>
+                <li class="tópicos__item"></li>
+                <a href="#" class="tópicos__link">Agile</a>
+            </li>
+                <li class="tópicos__item"></li>
+                <a href="#" class="tópicos__link">Startups</a>
+            </li>
+                <li class="tópicos__item"></li>
+                <a href="#" class="tópicos__link">HTML & CSS</a>
+            </li>
+                <li class="tópicos__item"></li>
+                <a href="#" class="tópicos__link">Python</a>
+            </li>
+                <li class="tópicos__item"></li>
+                <a href="#" class="tópicos__link">OO</a>
+            </li>
+                <li class="tópicos__item"></li>
+  <a href="#" class="tópicos__link">Java</a>
+    </li>
+  </ul>
+</section>
+<section class="tópicos"></section>
+<h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+<ul class="tópicos__lista"></ul><a href="#" class="tópicos__link">Android</a></li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">Marketing Digital</a>
+</li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">Agile</a>
+</li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">Startups</a>
+</li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">HTML & CSS</a>
+</li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">Python</a>
+</li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">OO</a>
+</li>
+<li class="tópicos__item"></li>
+<a href="#" class="tópicos__link">Java</a>
+</li>
+</ul>
+</section>
             <h2 class="carrossel__titulo">Novos lançamentos </h2>
             <!-- Slider main container -->
 <div class="swiper">
+    <div class="card"></div>
+    <div class="card__descrição"></div>
+    <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+          <p class="descrição__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+        </div>
+        <img src="img/Angular.svg" class="descrição__imagem" />
+      </div>
+
+</div>
+    <img src="img/Angular.svg" class="descrição__imagem" />
+</div>
+    <div class="card__botões"></div>
+    <ul class="botões">
+        <li class="botões__item"></li>
+        <img src="img/Favoritos.svg" alt="Favoritar livro" />
+    </li>
+        <li class="botões__item"></li>
+        <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+    </li>
+      </ul>
+      <a href="#" class="botões__ancora">Saiba mais</a>
+  </div>
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">Slide 1</div>
+    <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
+</div>
     <div class="swiper-slide">Slide 2</div>
+    <img src="img/Portugol.svg" alt="Livro sobre portugol" />
+</div>
     <div class="swiper-slide">Slide 3</div>
+    <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+</div>
     ...
   </div>
   <!-- If we need pagination -->
@@ -66,9 +152,6 @@
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
 </div>
         </section>
             <h2 class="banner__titulo">Já sabe por onde começar?</h2>
@@ -79,6 +162,18 @@
             class="banner__pesquisa"
             placeholder="Qual será sua próxima leitura?" 
             />
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+  spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: { el: ".swiper-pagination",
+    type: "bullets",
+
+    },
+ });
+</script>
+
           </section>
         </body>
         
