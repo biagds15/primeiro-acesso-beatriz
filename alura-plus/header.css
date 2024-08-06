@@ -36,8 +36,40 @@
     display: none;
   }
   @media screen and (min-width: 1024px) {
-    /* Estilos para tablets */
-  }
+    .opções_item {
+      padding: 0 1em;
+      text-transform: uppercase;
+
+    .container__titulo,
+    .container__titulo--negrito {
+      font-family: var(--fonte-secundario);
+      font-size: 30px;
+    }
   
+    .container__titulo {
+      font-weight: 400;
+      display: block; 
+      display: none;
+      color: var(--preto);
+      display: flex; 
+    }
+  
+    .container__titulo--negrito {
+      font-weight: 700;
+    }
+  }
+  .opções 
+  .cabeçalho__menu-hamburguer 
+  .container__imagem-transparente 
+    display: none;
+  
+    .opções_botão:checked ~ .lista-menu {
+      display: block;
+      width: auto;
+    }
 
   
+    .opções_botão:checked ~ .lista-menu {
+      display: block;
+      width: auto;
+    }
